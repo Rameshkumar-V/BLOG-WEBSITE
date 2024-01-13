@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/contact.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/css/contact.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Sarabun:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <!--header-->
+    <div class="header">
+      <div class="logo">Tamilmani</div>
+      <div class="navbar">
+        <nav>
+          <a href="/home">Home</a>
+          <a href="/about">Aboutme</a>
+          <a href="">Contact</a>
+          <a href="" class="subs">Subscribe</a>
+        </nav>
+      </div>
+    </div>
+    <!--contact-->
+    <div class="contact">
+        <div class="text">
+            <h1>Ask your doubts here. <br>Lets grow together!</h1>
+            <p>E-mail</p>
+            <input type="text" class="mail" placeholder="Your E-mail address">
+            <p class="para">Message</p>
+            <textarea name="message" class="msg" cols="30" rows="10" placeholder="Your message"></textarea>
+            <br>
+            <button><a href="" class="submit">Submit</a></button>
+        </div>
+        <div class="image">
+            <img
+            src="{{ url_for('static', filename='images/kateryna-hliznitsova-3hvogcU-aTw-unsplash.jpg') }}" alt="" width="330" height="400">
+        </div>
+    </div>
+</body>
+</html>

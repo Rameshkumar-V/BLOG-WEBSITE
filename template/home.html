@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tamilmani</title>
+    <link rel="stylesheet" href="/css/home.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Sarabun:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">Tamilmani</div>
+      <div class="navbar">
+        <nav>
+          <a href="/home">Home</a>
+          <a href="/about">Aboutme</a>
+          <a href="/contact">Contact</a>
+          <a href="" class="subs">Subscribe</a>
+        </nav>
+      </div>
+    </div>
+    <!--about photo-->
+    <div class="start">
+      <div class="photo">
+        <img
+          src="{{ url_for('static', filename='images/WhatsApp Image 2023-12-26 at 1.36.18 PM.jpeg') }}"
+
+          alt=""
+          width="400"
+          height="500"
+        />
+      </div>
+      <div class="about">
+        <div>
+          <h1 class="h1">Hello I'm Tamilmani, an English professor</h1>
+          <p class="para">
+            Dr Tamilmani K T is an Associate Professor & Head, Dept of English
+            and Vice-Principal at Nehru Memorial College in Puthanampatti,
+            Tiruchirappalli, affiliated to Bharathidasan University, Tamil Nadu,
+            India. He has completed 29 years of collegiate service. His research
+            interests include American Literature and English Language Teaching.
+            He completed a UGC funded minor research project titled “Developing
+            Effective Strategies for Enriching the Word Power of the
+            First-Generation Rural Learners.” He has published 30 research
+            papers in reputed journals. He has served as a resource person for a
+            number of academic programs in UGC-Human Resource Development Centre
+            of Bharathidasan University.
+          </p>
+          <a href="/about" class="More">More about me ></a>
+        </div>
+      </div>
+    </div>
+    <!--professional acts-->
+    <div class="professional">
+      <div class="start">
+        <div class="photo">
+          <img
+
+       src="{{ url_for('static', filename='images/alexandra-fuller-4RNLzJzEMMs-unsplash 1.jpg') }}"
+
+            alt=""
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="about">
+          <div>
+            <h1 class="h1">Professional acts</h1>
+            <p class="para">
+              I am a professional speaker.You can boostUp your career by viewing
+              my professional acts
+            </p>
+            <a href="/professionalacts" class="More">View my professional acts ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--learning resources-->
+    <div class="professional1">
+      <div class="start">
+        <div class="photo">
+          <img
+
+        src="{{ url_for('static', filename='images/alexandra-fuller-4RNLzJzEMMs-unsplash 1.jpg') }}"
+            alt=""
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="about">
+          <div>
+            <h1 class="h1">Learning Resources</h1>
+            <p class="para">
+              You can have lot of free learning resouces.Improve your carrer
+              with these resources
+            </p>
+            <a href="/learningresources" class="More"
+              >View all learning resources ></a
+            >
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--learn english easy-->
+    <div class="professional">
+      <div class="start">
+        <div class="photo">
+          <img
+            
+            src="{{ url_for('static', filename='images/alexandra-fuller-4RNLzJzEMMs-unsplash 1.jpg') }}"
+            alt=""
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="about">
+          <div>
+            <h1 class="h1">Learn english easy</h1>
+            <p class="para">
+              Tired of correcting your grammer.Here lot of tips to improve your
+              english speaking skills.
+            </p>
+            <a href="/essay" class="More">View learning tips ></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--publications-->
+    <div class="professional1">
+      <div class="start">
+        <div class="photo">
+          <img
+
+            src="{{ url_for('static', filename='images/alexandra-fuller-4RNLzJzEMMs-unsplash 1.jpg') }}"
+
+            alt=""
+            width="200"
+            height="250"
+          />
+        </div>
+        <div class="about">
+          <div>
+            <h1 class="h1">Publications</h1>
+            <p class="para">
+              As I am a experienced English professor I published so many
+              project paper and presentations on English
+            </p>
+            <a href="/publications" class="More">View all publications ></a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="head">
+        <h1>Ask your doubts here.<br />lets grow together!</h1>
+      </div>
+      <div class="enter">
+        <p>E-mail</p>
+        <input
+          type="text"
+          class="mail"
+          name="E-mail"
+          placeholder="Your E-mail Address"
+          id="emailid"
+        />
+        <br /><br />
+        <p>Your message</p>
+        <textarea
+          name="message"
+          class="msg"
+          cols="37"
+          rows="100"
+          placeholder="Your message"
+          id="message"
+        ></textarea>
+        <br />
+        <button class="submit" id="submit">Submit</button>
+       <div class="links">
+        <a href="https://www.linkedin.com/in/dr-tamilmani-k-t-undefined-794679298/" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+     <a href="https://mail.google.com/mail/?view=cm&fs=1&to=kttmanieng8@gmail.com&su=Subject%20of%20the%20email&body=Body%20of%20the%20email" target="_blank"><i class="fa-regular fa-envelope"></i></a>
+
+
+
+      </div>
+      </div>
+    </div>
+  </body>
+
+  <script>
+const btn = document.getElementById("submit");
+btn.addEventListener('click', () => {
+  console.log("button pressed successfully!");
+
+  let emailidbtn = document.getElementById("emailid");
+  let messagebtn = document.getElementById("message");
+  let emailid = document.getElementById("emailid").value;
+  let message = document.getElementById("message").value;
+
+
+  fetch(`/email?emailid=${emailid}&message=${message}`, {
+    method: 'POST'
+  })
+    .then(response => response.json())
+    .then(data => {
+      console.log(data.result);
+      emailidbtn.value='';
+      messagebtn.value='';
+    })
+    .catch(error => {
+      console.error(error);
+            emailidbtn.value='';
+      messagebtn.value='';
+    });
+});
+  </script>
+</html>

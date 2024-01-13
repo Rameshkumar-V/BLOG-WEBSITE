@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/publication.css') }}">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications</title>
+    <link rel="stylesheet" href="/css/publication.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&family=Sarabun:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--header-->
+    <div class="header">
+      <div class="logo"><a href="/html/home.html" class="back"><</a>Tamilmani</div>
+      <div class="navbar">
+        <nav>
+          <a href="/home">Home</a>
+          <a href="/about">Aboutme</a>
+          <a href="/contact">Contact</a>
+          <a href="" class="subs">Subscribe</a>
+        </nav>
+      </div>
+    </div>
+    <!--heading-->
+    <div class="heading">
+      <h2>Publications</h2>
+    </div>
+    <!--about-->
+    <div class="about">
+      <p>
+        Welcome to the Paper Publications page, where we showcase a compilation of scholarly works and research contributions. Explore an array of insightful papers authored by our esteemed professor. From cutting-edge discoveries to profound insights, this collection reflects the commitment to academic excellence and a passion for advancing knowledge.
+      </p>
+    </div>
+    <!--pdfs-->
+     {% for document in document_details %}
+    <div class="container">
+      <div class="pdf1">
+        <a href="/getfile/{{document.document_id}}">
+          <img 
+          src="{{ url_for('static', filename='images/pub.jpg') }}"  loading="lazy"/>
+          <h2>{{document.document_name}}</h2>
+          <p></p>
+        </a>
+      </div>
+    </div>
+    {% endfor %}
+  </body>
+</html>
